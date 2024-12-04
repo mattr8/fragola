@@ -1,0 +1,23 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "calendav"
+require "dotenv/load"
+require "icalendar"
+require "securerandom"
+
+credentials = Calendav::Credentials::Standard.new(
+  host: ENV["CALDAV_HOST"],
+  username: ENV["CALDAV_USER"],
+  password: ENV["CALDAV_PW"],
+  authentication: :basic_auth
+)
+
+client = Calendav.client(credentials)
+groceries = client.todos.list(ENV["GROCERY_LIST_URI"])
+groceries.each do |grocery|
+  puts grocery.url
+  puts grocery.summary
+  puts grocery.status
+  puts grocery.due
+end

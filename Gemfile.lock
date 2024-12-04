@@ -1,0 +1,86 @@
+GIT
+  remote: https://github.com/pat/calendav.git
+  revision: d4a168cb61ced913510e4e3edd897f8e63c77cbe
+  branch: main
+  specs:
+    calendav (0.4.0)
+      http
+      icalendar
+      nokogiri
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.8.7)
+      public_suffix (>= 2.0.2, < 7.0)
+    base64 (0.2.0)
+    domain_name (0.6.20240107)
+    dotenv (3.1.4)
+    ffi (1.17.0-aarch64-linux-gnu)
+    ffi (1.17.0-aarch64-linux-musl)
+    ffi (1.17.0-arm-linux-gnu)
+    ffi (1.17.0-arm-linux-musl)
+    ffi (1.17.0-arm64-darwin)
+    ffi (1.17.0-x86-linux-gnu)
+    ffi (1.17.0-x86-linux-musl)
+    ffi (1.17.0-x86_64-darwin)
+    ffi (1.17.0-x86_64-linux-gnu)
+    ffi (1.17.0-x86_64-linux-musl)
+    ffi-compiler (1.3.2)
+      ffi (>= 1.15.5)
+      rake
+    http (5.2.0)
+      addressable (~> 2.8)
+      base64 (~> 0.1)
+      http-cookie (~> 1.0)
+      http-form_data (~> 2.2)
+      llhttp-ffi (~> 0.5.0)
+    http-cookie (1.0.7)
+      domain_name (~> 0.5)
+    http-form_data (2.3.0)
+    icalendar (2.10.3)
+      ice_cube (~> 0.16)
+      ostruct
+    ice_cube (0.17.0)
+    llhttp-ffi (0.5.0)
+      ffi-compiler (~> 1.0)
+      rake (~> 13.0)
+    nokogiri (1.16.8-aarch64-linux)
+      racc (~> 1.4)
+    nokogiri (1.16.8-arm-linux)
+      racc (~> 1.4)
+    nokogiri (1.16.8-arm64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.16.8-x86-linux)
+      racc (~> 1.4)
+    nokogiri (1.16.8-x86_64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.16.8-x86_64-linux)
+      racc (~> 1.4)
+    ostruct (0.6.1)
+    public_suffix (6.0.1)
+    racc (1.8.1)
+    rake (13.2.1)
+
+PLATFORMS
+  aarch64-linux
+  aarch64-linux-gnu
+  aarch64-linux-musl
+  arm-linux
+  arm-linux-gnu
+  arm-linux-musl
+  arm64-darwin
+  x86-linux
+  x86-linux-gnu
+  x86-linux-musl
+  x86_64-darwin
+  x86_64-linux
+  x86_64-linux-gnu
+  x86_64-linux-musl
+
+DEPENDENCIES
+  calendav!
+  dotenv
+
+BUNDLED WITH
+   2.5.23
